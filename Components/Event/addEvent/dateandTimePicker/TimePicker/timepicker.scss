@@ -1,0 +1,19 @@
+.time-picker-contianer{
+	position: absolute;
+    top: 100%;
+	right: 0;
+    background-color: white;
+    width: 80px;
+    height: 200px;
+    overflow-y: scroll;
+
+	.time-item{
+		padding: 5px 10px;
+		box-sizing: border-box;
+		color: #484848;
+	}
+	.time-item:hover {
+		background-color: rgba(0,0,0,0.2);
+		cursor: pointer;
+	}
+}
