@@ -1,0 +1,25 @@
+.day-event-box{
+	width: 100%;
+	border-right:  #e0e0e0 1px solid;
+	border-bottom: #e0e0e0 1px solid;
+	padding: 5px 10px;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	p{
+		font-family: Muli;
+		font-size: 18px;
+		text-transform: capitalize;
+		margin: 0;
+		padding: 0;
+		color: white;
+		box-sizing: border-box;
+	}
+	.single-event{
+		margin-bottom: 4px;
+		background-color: blue;
+		padding: 5px 10px;
+		
+	}
+}
