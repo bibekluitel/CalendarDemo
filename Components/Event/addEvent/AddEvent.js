@@ -125,7 +125,7 @@ AddEvent.propTypes = {
 AddEvent.defaultProps = {
 	startDate: '2018 07 03',
 	endDate: '2019 09 03',
-	title: "Add a Title",
+	title: " Add a Title",
 	getAMonthDateData: function () {},
 	closeDialog: function () {},
 	addEvent: function () {},

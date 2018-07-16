@@ -6,6 +6,7 @@ const ExtractTextPlugin = require ('extract-text-webpack-plugin');
 
 module.exports = {
 	entry: {
+		react: ['react', 'react-dom', 'react-redux', 'react-router', 'react-router-dom', 'redux', 'redux-thunk', 'style-loader', 'node-sass', 'prop-types'],
 		app: path.resolve( __dirname , 'app.js'),
 	},
 	output: {
@@ -14,6 +15,7 @@ module.exports = {
 	},
 	plugins: [
 			new HtmlWebpackPlugin({
+				chunks: ['react', 'app'],
 				template: path.resolve( __dirname , 'index.html'),
 				filename: 'index.html'
 			}),
@@ -57,6 +59,11 @@ module.exports = {
 			}
 		]
 	},
+
+	node: {
+    	fs: 'empty',
+	},
+	
 	resolve: {
 		alias: {
       			Components: path.resolve(__dirname, 'Components'),
